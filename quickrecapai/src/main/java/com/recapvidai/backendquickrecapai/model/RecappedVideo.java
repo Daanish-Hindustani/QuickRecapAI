@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Table(name = "recapped_videos", uniqueConstraints = {
         @UniqueConstraint(columnNames = "id")
 })
-public class RecappedVideoModel {
+public class RecappedVideo {
     @Id
     @UuidGenerator
     @Column(unique = true, nullable = false, updatable = false)
