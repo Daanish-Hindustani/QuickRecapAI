@@ -11,4 +11,5 @@ import java.util.UUID;
 @Repository
 public interface RecappedVideoRepository extends JpaRepository<RecappedVideo, Integer> {
     Optional<RecappedVideo> findByIdIs(UUID rid);
+    Optional<RecappedVideo> getRecappedVideoById(UUID id);
 }
